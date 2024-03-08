@@ -18,7 +18,6 @@ function resetGameStatus(){
     }
 }
 
-
 function startNewGame() {
     if (players[0].name === '' || players[1].name === '') {
         alert('Please set custom player names for both players!')
@@ -123,11 +122,9 @@ function selectGameField(event) {
 
         if (winnerId > 0) {
             const winnerName = players[winnerId -1].name
-            gameOverElement.firstElementChild.firstElementChild.textContent =
-                winnerName
+            gameOverElement.firstElementChild.firstElementChild.textContent = winnerName
         } else {
             gameOverElement.firstElementChild.textContent = 'It\'s a draw!'
         }
     }
-
 }
