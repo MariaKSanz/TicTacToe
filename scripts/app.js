@@ -7,8 +7,8 @@ const gameData = [
     [0, 0, 0],
     [0, 0, 0],
     [0, 0, 0],
-
 ]
+
 const players = [
     {
         name: '',
@@ -32,7 +32,6 @@ const editPlayer1ButtonElement = document.getElementById('edit-player-1-button')
 const editPlayer2ButtonElement = document.getElementById('edit-player-2-button')
 const cancelConfigButtonElement = document.getElementById('cancel-config-button')
 const startNewGameButton = document.getElementById('start-game-button')
-// const gameFieldElements =document.querySelectorAll('#game-board li')
 const gameBoardElement = document.getElementById('game-board')
 
 editPlayer1ButtonElement.addEventListener('click', openPlayerConfig)
@@ -44,9 +43,5 @@ backdropElement.addEventListener('click', closePlayerConfig)
 formElement.addEventListener('submit', savePlayerConfig)
 
 startNewGameButton.addEventListener('click', startNewGame)
-
-// // for (const gameFieldElement of gameFieldElements) {
-//     gameFieldElement.addEventListener('click', selectGameField)
-// }
 
 gameBoardElement.addEventListener('click', selectGameField)
