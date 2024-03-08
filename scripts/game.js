@@ -121,8 +121,7 @@ function selectGameField(event) {
         gameOverElement.style.display ='block'
 
         if (winnerId > 0) {
-            const winnerName = players[winnerId -1].name
-            gameOverElement.firstElementChild.firstElementChild.textContent = winnerName
+            gameOverElement.firstElementChild.firstElementChild.textContent = players[winnerId - 1].name
         } else {
             gameOverElement.firstElementChild.textContent = 'It\'s a draw!'
         }
